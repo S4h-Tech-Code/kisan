@@ -8,10 +8,10 @@ import { ProductListComponent } from './components/product-list/product-list.com
 import { ProductDetailListComponent } from './components/product-detail-list/product-detail-list.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { OverviewComponent } from '../home/components/overview/overview.component';
-
+import { ResultsComponent } from '../home/components/results/results.component';
 
 @NgModule({
-  declarations: [HomeComponent, ProductListComponent, ProductDetailListComponent, OverviewComponent],
+  declarations: [HomeComponent, ProductListComponent, ProductDetailListComponent, OverviewComponent, ResultsComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,
