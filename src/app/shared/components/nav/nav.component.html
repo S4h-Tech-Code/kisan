@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!--<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
     aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -22,8 +22,45 @@
       <!-- <li class="nav-item">
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
       </li> -->
-    </ul>
+   <!-- </ul>
     <a class="btn btn-outline-primary" href="#">Sign up</a>
     <a class="btn btn-outline-primary" href="#">Login</a>
+  </div>
+</nav>-->
+
+<nav class="navbar navbar-expand-md bg-primary navbar-dark sticky-top">
+  <div class="container">
+  <a class="navbar-brand" [routerLink]="['/home/overview']">KISAN</a>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb" aria-controls="navb" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div id="navb" class="navbar-collapse collapse hide" style="
+  text-align: center;
+">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+          <a  [routerLink]="['/home/overview']" class="nav-link change-color marginclass" style="color:white;">Home</a>
+        </li>
+      <li class="nav-item">
+        <a  [routerLink]="['/home/products']" class="nav-link change-color marginclass" style="color:white;">Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/home/product-detail']" class="nav-link change-color marginclass" style="color:white;">Product-detail</a>
+      </li>
+      <li class="nav-item">
+        <a  [routerLink]="['/dashboard/overview']" class="nav-link change-color marginclass" style="color:white;">Dashboard</a>
+      </li>
+
+    </ul>
+
+    <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item">
+        <a href="#" class=" btn btn-light marginclass"><!--<span class="fas fa-user "></span>--> Sign Up</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class=" btn btn-success"><!--<span class="fas fa-sign-in-alt"></span>--> Login</a>
+      </li>
+    </ul>
+  </div>
   </div>
 </nav>
