@@ -1,4 +1,4 @@
-<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+<!--<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
     <div class="col-md-5 p-lg-5 mx-auto my-5">
         <h1 class="display-6 font-weight-normal">Checkout our new Marketplace</h1>
         <div class="container">
@@ -23,4 +23,33 @@
             </div>
         </div>
     </div>
-</div>
+</div>-->
+<div id="imagecontainer" class="container-fluid homediv">
+
+    <form>
+    <fieldset style="text-align:center">
+      <legend>Farm Trading</legend>
+    </fieldset>
+    <div style="text-align:center;margin-bottom: 5%;">
+      <input type="radio" id="radio1" name="radios" value="all" checked>
+      <label for="radio1" style="color: white;">Buy</label>
+   <input type="radio" id="radio2" name="radios"value="false">
+      <label for="radio2" style="color: white;">Sell</label>
+   <input type="radio" id="radio3" name="radios" value="true">
+      <label for="radio3" style="color: white;">Farm</label>
+       </div>
+
+    <div class="inner-form">
+
+      <div class="input-field first-wrap">
+        <input id="search" type="text" placeholder="What are you looking for?" />
+      </div>
+      <div class="input-field second-wrap">
+        <input id="location" type="text" placeholder="location" />
+      </div>
+      <div class="input-field third-wrap">
+        <button  [routerLink]="['/results']" class="btn-search" type="button">Search</button>
+      </div>
+    </div>
+    </form>
+  </div>
